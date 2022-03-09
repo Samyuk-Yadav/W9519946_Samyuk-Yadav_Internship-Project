@@ -9,11 +9,13 @@
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/drawable/background_sender.xml" value="0.1605" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/drawable/button_shadow.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1605" />
+        <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/drawable/settings_bg.xml" value="0.1605" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/drawable/shape_background.xml" value="0.1605" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/layout/activity_detail_emergency_chat.xml" value="0.2" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/layout/activity_group_chat.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/layout/activity_setting_info.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/layout/fragment_calls.xml" value="0.15220179563916203" />
         <entry key="..\:/Users/aroni/AndroidStudioProjects/Chat/app/src/main/res/layout/fragment_emergency__chat.xml" value="0.15220179563916203" />
