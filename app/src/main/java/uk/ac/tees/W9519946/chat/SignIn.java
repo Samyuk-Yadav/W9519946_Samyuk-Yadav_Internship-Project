@@ -66,6 +66,14 @@ public class SignIn extends AppCompatActivity {
         activitySignInBinding.buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (activitySignInBinding.editTextTextEmailAddress.getText().toString().isEmpty()){
+                    activitySignInBinding.editTextTextEmailAddress.setError("Give your Email to Login");
+                    return;
+                }
+                if (activitySignInBinding.editTextTextPassword.getText().toString().isEmpty()){
+                    activitySignInBinding.editTextTextPassword.setError("Fill the credentials to Login");
+                    return;
+                }
 
                 progressDialog.show();
                 mAuth.signInWithEmailAndPassword(activitySignInBinding.editTextTextEmailAddress.getText().toString(), activitySignInBinding.editTextTextPassword.getText().toString())
