@@ -77,6 +77,10 @@ public class GroupChatActivity extends AppCompatActivity {
         binding.sent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (binding.chatMessage.getText().toString().isEmpty()){
+                    binding.chatMessage.setError("Enter something in the chat box");
+                    return;
+                }
                 final String message = binding.chatMessage.getText().toString();
                 final MessagesModel model = new MessagesModel(senderId, message);
                 model.setTimeStamp(new Date().getTime());

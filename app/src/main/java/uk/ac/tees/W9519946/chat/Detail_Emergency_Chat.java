@@ -92,6 +92,10 @@ public class Detail_Emergency_Chat extends AppCompatActivity {
         emergencyChatBinding.sent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (emergencyChatBinding.chatMessage.getText().toString().isEmpty()){
+                    emergencyChatBinding.chatMessage.setError("Enter something in the chat box");
+                    return;
+                }
 
                 String message = emergencyChatBinding.chatMessage.getText().toString();
                 final MessagesModel modelMessage = new MessagesModel(senderId, message);
