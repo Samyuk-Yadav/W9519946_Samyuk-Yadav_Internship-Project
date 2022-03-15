@@ -3,7 +3,7 @@ package uk.ac.tees.W9519946.chat.Models_;
 public class MessagesModel {
 
     Long timeStamp;
-    String userID, message;
+    String userID, message, idMessage;
 
     public MessagesModel(Long timeStamp, String userID, String message) {
         this.timeStamp = timeStamp;
@@ -18,9 +18,13 @@ public class MessagesModel {
     public MessagesModel(){}
 
 
+    public String getIdMessage() {
+        return idMessage;
+    }
 
-
-
+    public void setIdMessage(String idMessage) {
+        this.idMessage = idMessage;
+    }
 
     public Long getTimeStamp() {
         return timeStamp;

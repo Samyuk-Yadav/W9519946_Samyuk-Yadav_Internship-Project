@@ -59,7 +59,7 @@ public class Detail_Emergency_Chat extends AppCompatActivity {
         final ArrayList<MessagesModel> messagesModels = new ArrayList<>();
 
 
-        final AdapterChat adapterChat = new AdapterChat(messagesModels, this);
+        final AdapterChat adapterChat = new AdapterChat(messagesModels, recieveId, this);
         emergencyChatBinding.RecyclerViewChat.setAdapter(adapterChat);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -76,6 +76,7 @@ public class Detail_Emergency_Chat extends AppCompatActivity {
                         for (DataSnapshot snapShot1: snapshot.getChildren())
                         {
                          MessagesModel model = snapShot1.getValue(MessagesModel.class);
+                         model.setIdMessage(snapShot1.getKey());
                          messagesModels.add(model);
                         }
                             adapterChat.notifyDataSetChanged();
