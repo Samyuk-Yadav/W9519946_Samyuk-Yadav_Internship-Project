@@ -55,6 +55,14 @@ public class SignIn extends AppCompatActivity {
         progressDialog.setTitle("Login");
         progressDialog.setMessage("Login to your account");
 
+        activitySignInBinding.forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignIn.this, Forget_Password_NHS.class);
+                startActivity(intent);
+            }
+        });
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()

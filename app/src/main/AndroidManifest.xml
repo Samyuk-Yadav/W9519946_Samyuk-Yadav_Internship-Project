@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chat">
         <activity
+            android:name=".Forget_Password_NHS"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
             android:name=".Setting_Info"
             android:exported="false" />
         <activity
@@ -26,7 +32,7 @@
             android:name=".Register"
             android:exported="false" />
         <activity
-            android:name=".SignIn"
+            android:name=".Splash_Screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,6 +40,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
